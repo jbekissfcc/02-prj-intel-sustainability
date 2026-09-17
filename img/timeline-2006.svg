@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">2006 connected desktop</title>
+  <desc id="desc">A modern desktop computer connected to a network, with a factory in the background.</desc>
+  <rect width="640" height="360" fill="#d2e1e2"/>
+  <rect y="250" width="640" height="110" fill="#8ca3a2"/>
+  <path d="M35 250V130h70v120M120 250V95h95v155M235 250V155h55v95" fill="#5c7778"/>
+  <path d="M75 160v-20M150 130v-20M180 130v-20M255 190v-20" stroke="#f1c85a" stroke-width="9"/>
+  <rect x="290" y="70" width="230" height="155" rx="8" fill="#f0f3f1" stroke="#496b76" stroke-width="7"/>
+  <rect x="315" y="95" width="180" height="95" fill="#4c93a5"/>
+  <path d="M350 145h110M405 115v60" stroke="#d7f0e6" stroke-width="8"/>
+  <path d="M350 275h115l-18 25h-80z" fill="#f0f3f1" stroke="#496b76" stroke-width="7"/>
+  <text x="320" y="338" fill="#294955" font-family="sans-serif" font-size="28" text-anchor="middle">2006  CONNECTED WORLD</text>
+</svg>

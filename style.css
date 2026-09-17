@@ -1,1 +1,116 @@
-/* Add your CSS here */
+/* Give the header a darker Columbia blue gradient from left to right. */
+body {
+	background: #f7f3e8;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	background: linear-gradient(to right, #5f91b8, #a8cde3);
+	padding: 40px;
+	margin-bottom: 60px;
+	color: white;
+}
+
+header * {
+	color: white;
+}
+
+header img {
+	width: 20%;
+	margin-bottom: 20px;
+}
+
+header h1 {
+	margin-bottom: 20px;
+}
+
+/* Keep the timeline cards in one scrollable row on larger screens. */
+section {
+	display: flex;
+	gap: 20px;
+	overflow-x: auto;
+}
+
+section > div {
+	flex: 0 0 calc((100% - 60px) / 4);
+	position: relative;
+	box-sizing: border-box;
+	padding: 20px;
+	background: white;
+	box-shadow: 0 2px 8px rgba(30, 55, 75, 0.12);
+}
+
+section h2 {
+	color: #7aa7c2;
+}
+
+section h3 {
+	color: #5f91b8;
+}
+
+section img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Hide each card description until the card is interacted with. */
+section > div > p {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 20px;
+	background: #5f91b8;
+	color: white;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
+}
+
+/* Show a card description when the mouse is over the card. */
+@media (min-width: 769px) {
+	section > div:hover > p {
+		display: flex;
+	}
+}
+
+/* Arrange cards in three columns on wider tablets. */
+@media (max-width: 1024px) {
+	section {
+		flex-wrap: wrap;
+		overflow-x: hidden;
+	}
+
+	section > div {
+		flex: 0 0 calc((100% - 40px) / 3);
+	}
+}
+
+/* Use two columns on smaller tablets. */
+@media (max-width: 768px) {
+	section > div {
+		flex-basis: calc((100% - 20px) / 2);
+	}
+
+	/* Show a card description after the card is tapped. */
+	section > div.is-open > p {
+		display: flex;
+	}
+}
+
+/* Stack cards in one column on mobile screens. */
+@media (max-width: 480px) {
+	header img {
+		width: 40%;
+	}
+
+	section > div {
+		flex-basis: 100%;
+	}
+}

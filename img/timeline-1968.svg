@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">1968 room-sized computer</title>
+  <desc id="desc">A large early computer cabinet with reels and blinking lights.</desc>
+  <rect width="640" height="360" fill="#17324d"/>
+  <rect y="270" width="640" height="90" fill="#102235"/>
+  <rect x="150" y="55" width="340" height="220" rx="8" fill="#718397" stroke="#c9d5dc" stroke-width="8"/>
+  <rect x="180" y="82" width="280" height="70" fill="#172b3e"/>
+  <circle cx="260" cy="117" r="30" fill="#d8e1e5" stroke="#8da0ad" stroke-width="8"/>
+  <circle cx="380" cy="117" r="30" fill="#d8e1e5" stroke="#8da0ad" stroke-width="8"/>
+  <circle cx="260" cy="117" r="10" fill="#d36b4d"/>
+  <circle cx="380" cy="117" r="10" fill="#4db5a5"/>
+  <rect x="190" y="180" width="260" height="50" fill="#263f55"/>
+  <circle cx="220" cy="205" r="8" fill="#efc45b"/><circle cx="250" cy="205" r="8" fill="#efc45b"/><circle cx="280" cy="205" r="8" fill="#efc45b"/>
+  <text x="320" y="324" fill="#d8e1e5" font-family="sans-serif" font-size="28" text-anchor="middle">1968  COMPUTING</text>
+</svg>
