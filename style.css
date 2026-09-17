@@ -2,10 +2,25 @@
 body {
 	background: #f7f3e8;
 	font-family: Arial, Helvetica, sans-serif;
+	color: #1f2933;
+}
+
+.skip-link {
+	position: absolute;
+	left: 10px;
+	top: -50px;
+	z-index: 1000;
+	padding: 10px 15px;
+	background: #ffffff;
+	color: #164a63;
+}
+
+.skip-link:focus {
+	top: 10px;
 }
 
 header {
-	background: linear-gradient(to right, #5f91b8, #a8cde3);
+	background: linear-gradient(to right, #245b7a, #477f9c);
 	padding: 40px;
 	margin-bottom: 60px;
 	color: white;
@@ -20,6 +35,11 @@ header {
 .language-switcher label {
 	display: block;
 	margin-bottom: 5px;
+}
+
+.language-switcher select {
+	color: #1f2933;
+	background-color: #ffffff;
 }
 
 header * {
@@ -73,6 +93,14 @@ footer {
 	text-align: center;
 }
 
+.footer-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 60px;
+}
+
 footer p {
 	margin: 0;
 }
@@ -81,7 +109,7 @@ footer .bi-c-circle {
 	margin-right: 3px;
 }
 
-section > div {
+.timeline-card {
 	flex: 0 0 calc((100% - 60px) / 4);
 	position: relative;
 	box-sizing: border-box;
@@ -91,11 +119,11 @@ section > div {
 }
 
 section h2 {
-	color: #7aa7c2;
+	color: #1f5f7a;
 }
 
 section h3 {
-	color: #5f91b8;
+	color: #164a63;
 }
 
 section img {
@@ -122,7 +150,7 @@ section img {
 }
 
 /* Hide each card description until the card is interacted with. */
-section > div > p {
+.timeline-card > p {
 	display: none;
 	position: absolute;
 	top: 0;
@@ -132,7 +160,7 @@ section > div > p {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 20px;
-	background: #5f91b8;
+	background: #245b7a;
 	color: white;
 	text-align: center;
 	align-items: center;
@@ -142,7 +170,8 @@ section > div > p {
 
 /* Show a card description when the mouse is over the card. */
 @media (min-width: 769px) {
-	section > div:hover > p {
+	.timeline-card:hover > p,
+	.timeline-card:focus > p {
 		display: flex;
 	}
 }
@@ -154,30 +183,57 @@ section > div > p {
 		overflow-x: hidden;
 	}
 
-	section > div {
+	.timeline-card {
 		flex: 0 0 calc((100% - 40px) / 3);
 	}
 }
 
 /* Use two columns on smaller tablets. */
 @media (max-width: 768px) {
-	section > div {
+	.three-column-section > div {
+		flex-direction: column;
+	}
+
+	.three-column-section > div > div {
+		flex: 0 0 auto;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.timeline-card {
 		flex-basis: calc((100% - 20px) / 2);
 	}
 
 	/* Show a card description after the card is tapped. */
-	section > div.is-open > p {
+	.timeline-card.is-open > p {
 		display: flex;
 	}
 }
 
 /* Stack cards in one column on mobile screens. */
 @media (max-width: 480px) {
+	.subscription-section form {
+		flex-direction: column;
+	}
+
+	.subscription-section input {
+		width: min(300px, 100%);
+	}
+
 	header img {
 		width: 40%;
 	}
 
-	section > div {
+	.timeline-card {
 		flex-basis: 100%;
 	}
+}
+
+.timeline-card:focus,
+a:focus,
+button:focus,
+select:focus,
+input:focus {
+	outline: 3px solid #f2b134;
+	outline-offset: 3px;
 }
