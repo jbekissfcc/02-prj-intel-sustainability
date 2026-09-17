@@ -11,6 +11,17 @@ header {
 	color: white;
 }
 
+.language-switcher {
+	width: 220px;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+.language-switcher label {
+	display: block;
+	margin-bottom: 5px;
+}
+
 header * {
 	color: white;
 }
@@ -29,6 +40,45 @@ section {
 	display: flex;
 	gap: 20px;
 	overflow-x: auto;
+}
+
+.timeline-section {
+	margin-bottom: 60px;
+}
+
+.three-column-section,
+.subscription-section {
+	margin-bottom: 60px;
+}
+
+.subscription-section {
+	display: block;
+	text-align: center;
+}
+
+.subscription-section form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.subscription-section input {
+	width: 300px;
+}
+
+footer {
+	padding: 20px;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+}
+
+footer .bi-c-circle {
+	margin-right: 3px;
 }
 
 section > div {
@@ -52,6 +102,23 @@ section img {
 	width: 100%;
 	height: auto;
 	display: block;
+}
+
+/* Keep the three content blocks in one row. */
+.three-column-section > div {
+	display: flex;
+	gap: 20px;
+	flex: 1 1 100%;
+	padding: 0;
+	background: transparent;
+	box-shadow: none;
+}
+
+.three-column-section > div > div {
+	flex: 1;
+	padding: 20px;
+	background: white;
+	box-shadow: 0 2px 8px rgba(30, 55, 75, 0.12);
 }
 
 /* Hide each card description until the card is interacted with. */
